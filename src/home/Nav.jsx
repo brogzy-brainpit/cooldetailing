@@ -1,19 +1,19 @@
-'use client';
+"use client";
 
-import React, { useState, useMemo } from 'react';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
+import React, { useState, useMemo } from "react";
+import Link from "next/link";
+import { motion } from "framer-motion";
 import {
   Book,
   Contact,
   DollarSign,
   Home,
   Newspaper,
-} from 'lucide-react';
+} from "lucide-react";
 
 /* ---------------- UTIL ---------------- */
 function cn(...classes) {
-  return classes.filter(Boolean).join(' ');
+  return classes.filter(Boolean).join(" ");
 }
 
 /* ---------------- COMPONENT ---------------- */
@@ -22,7 +22,7 @@ function SlidingCapsuleNav({
   className,
   activeTabClassName,
   tabClassName,
-  layoutId = 'capsule-nav',
+  layoutId = "capsule-nav",
   currentTab,
   onChange,
 }) {
@@ -43,7 +43,7 @@ function SlidingCapsuleNav({
   return (
     <nav
       className={cn(
-        'relative flex font-custom items-center gap-1 rounded-full bg-brand-accent p-1 shadow-sm',
+        "relative flex font-custom items-center gap-1 rounded-full bg-brand-accent p-1 shadow-sm",
         className
       )}
       onMouseLeave={() => setHoveredTab(null)}
@@ -59,26 +59,26 @@ function SlidingCapsuleNav({
             onClick={(e) => handleLinkClick(e, tab.url)}
             onMouseEnter={() => setHoveredTab(tab.url)}
             className={cn(
-              'relative z-10 flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium transition-colors duration-200',
-              'rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring',
+              "relative z-10 flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium transition-colors duration-200",
+              "rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
               isActive
-                ? 'text-brand-accent2'
-                : 'text-brown-200 hover:text-brand-accent2',
+                ? "text-brand-accent2"
+                : "text-brown-200 hover:text-brand-accent2",
               tabClassName
             )}
-            aria-current={isActive ? 'page' : undefined}
+            aria-current={isActive ? "page" : undefined}
           >
             {/* Active Capsule */}
             {isActive && (
               <motion.div
                 layoutId={`${layoutId}-active`}
                 transition={{
-                  type: 'spring',
+                  type: "spring",
                   bounce: 0.2,
                   duration: 0.6,
                 }}
                 className={cn(
-                  'absolute inset-0 z-10 rounded-full bg-brand-secondary shadow-md',
+                  "absolute inset-0 z-10 rounded-full bg-brand-secondary shadow-md",
                   activeTabClassName
                 )}
               />
@@ -89,7 +89,7 @@ function SlidingCapsuleNav({
               <motion.div
                 layoutId={`${layoutId}-hover`}
                 transition={{
-                  type: 'spring',
+                  type: "spring",
                   bounce: 0.2,
                   duration: 0.6,
                 }}
@@ -109,32 +109,32 @@ function SlidingCapsuleNav({
 
 /* ---------------- DEMO ---------------- */
 export default function DemoSlidingCapsuleNav() {
-  const [activeTab, setActiveTab] = useState('/home');
+  const [activeTab, setActiveTab] = useState("/home");
 
   const tabs = [
     {
-      title: 'Home',
-      url: '/home',
+      title: "Home",
+      url: "/home",
       icon: <Home size={14} />,
     },
     {
-      title: 'Pricing',
-      url: '/pricing',
+      title: "Pricing",
+      url: "/pricing",
       icon: <DollarSign size={14} />,
     },
     {
-      title: 'Docs',
-      url: '/docs',
+      title: "Docs",
+      url: "/docs",
       icon: <Book size={14} />,
     },
     {
-      title: 'Blog',
-      url: '/blog',
+      title: "Blog",
+      url: "/blog",
       icon: <Newspaper size={14} />,
     },
     {
-      title: 'Contact',
-      url: '/contact',
+      title: "Contact",
+      url: "/contact",
       icon: <Contact size={14} />,
     },
   ];
@@ -142,17 +142,17 @@ export default function DemoSlidingCapsuleNav() {
   return (
     <div className="flex w-full flex-row fixed top-[3%]  z-header items-center justify-center ">
       <div className="flex border-[.3em]  border-brand-secondary flex-row size-[3.8em] justify-center  flex-cl items-center text-brand-secondary bg-brand-accent p-1.5 rounded-full">
-     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.94 4.92">
-     <g fill="#1A3526" stroke-width=".26" aria-label="c."
-      font-family="Beatrice Headline Trial" 
-      font-size="22.58" font-weight="700" 
-      >
-        <path d="M37.21 109.85c0 1.39.88 2.45 2.57 2.45 1.5 0 2.29-.81 2.5-1.93l-1.41-.31c-.08.62-.4 1.04-1.08 1.04-.76 0-1.17-.48-1.17-1.24 0-.77.41-1.28 1.16-1.28.68 0 1.01.39 1.08 1.02l1.41-.32c-.22-1.1-.99-1.9-2.49-1.9-1.6 0-2.57 1.1-2.57 2.47"
-         font-size="8.47" 
-        transform="translate(-37.21 -107.38)"/>
-        <path d="M42.77 112.26c.22 0 .38-.16.38-.39a.37.37 0 0 0-.38-.38.37.37 0 0 0-.4.38c0 .23.17.39.4.39" 
-        font-size="3.53" 
-      transform="translate(-37.21 -107.38)"/></g></svg>
+       <svg
+      viewBox="0 0 4.3010612 3.2794199"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className="size-[3em] animate-color-fade"
+    >
+      <path
+        d="M0.417688 3.26813C0.666044 3.26813 0.829732 3.0988 0.829732 2.85609C0.829732 2.61902 0.666044 2.44404 0.417688 2.44404C0.169333 2.44404 0 2.61902 0 2.85609C0 3.0988 0.169333 3.26813 0.417688 3.26813ZM1.1176 1.64253C1.1176 2.55693 1.6764 3.27942 2.73191 3.27942C3.66324 3.27942 4.1656 2.72627 4.30106 2.00942L3.7592 1.89089C3.66889 2.43276 3.3528 2.794 2.73191 2.794C2.02635 2.794 1.65947 2.31987 1.65947 1.64253C1.65947 0.976489 2.04893 0.479778 2.73756 0.479778C3.36409 0.479778 3.66889 0.841022 3.74791 1.37724L4.28978 1.26436C4.15431 0.536222 3.66324 0 2.7432 0C1.72156 0 1.1176 0.745066 1.1176 1.64253Z"
+        fill="#1a3526"
+      />
+    </svg>
       </div>
        <div className="flex flex-col items-center gap-4 bg-brand-secondary p-1.5 rounded-full">
         <SlidingCapsuleNav
