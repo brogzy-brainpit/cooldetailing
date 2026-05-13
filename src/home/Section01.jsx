@@ -51,7 +51,7 @@ const Section01 = () => {
                     <PixelImage className="h-[20vw] w-full">
                         <img src="https://images.unsplash.com/photo-1723553495282-5fecd038e9c6?q=80&w=723&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="work" className="w-full h-full object-cover" />
                     </PixelImage>
-                    <p className='mt-3 text-[1.3vw] tracking-tighter text-brand-secondary'>Nature's Canvas — 2022</p>
+                    <p className='mt-3 text-[1.3vw] tracking-tighter text-brand-secondary'>Nature&apos;s Canvas — 2022</p>
                 </div>
             </div>
         </section>
