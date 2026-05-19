@@ -16,7 +16,7 @@ function About() {
             <GridColumn>
                 <div className='lg:col-span-4 col-span-3 lg:col-start-1'>
                     <motion.div style={{rotate:-10}} className=' rounded-xl overflow-clip shadow-md drop-shadow-2xl shadow-brand-accent/55' >
-                    <PixelImage className='h-[42vw] lg:h-[32vw] md:h-[32vw] w-full'>
+                    <PixelImage className='h-[42vw] lg:h-[32vw] md:h-[32vw] w-[94%]'>
                        <img src="https://images.unsplash.com/photo-1723553495282-5fecd038e9c6?q=80&w=723&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="work" className="w-full aspect-[7/5] h-full object-cover" />
                    </PixelImage>
                     </motion.div>
