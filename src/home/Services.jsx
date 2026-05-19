@@ -20,12 +20,12 @@ function Services() {
     <div ref={ref} className='bgwhite w-full min-h-[60vh]'>
         <Section>
             <GridColumn>
-                <div className='lg:col-span-5 lg:col-start-1'>
+                <div className='lg:col-span-5 col-span-2 lg:col-start-1'>
                      <StaggerText color={'#1a3526'} initialColor={'#1a3526'}
        once={false} className=' text-brand-secondary  text-heading2 font-custom  max-w-[80vw] gap-[5px] leading-none'
         text={'Recent Work'.split('')}/>
                 </div>
-                <div className='lg:col-span-7 lg:col-start-6'>
+                <div className='lg:col-span-7 col-span-4 lg:col-start-6'>
                                     <h2 className='text-heading3 leading-[1.2] font-custom text-brand-secondary mb-10'>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione qui ad labore necessitatibus alias veritatis, eveniet magnam consectetur quidem mollitia.
                                     </h2>
