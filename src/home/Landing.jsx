@@ -32,7 +32,8 @@ scroll down
           <h2 className="text-heading1 font-custom capitalize text-brand-white leading-[.8] font-mediu">
             make<span className="text-brand-accent">.</span>
             </h2><h2 className="text-heading1 ml[.82em] font-custom capitalize text-brand-white leading-[.8] font-mediu">
-            your car<span className="text-brand-accent">.</span>
+            your car
+            <span className="text-brand-accent">.</span>
             </h2><h2 className="text-heading1 ml[1.4em] font-custom capitalize text-brand-white leading-[.8] font-mediu">
             better<span className="text-brand-accent">.</span>
             </h2>

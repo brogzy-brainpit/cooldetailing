@@ -1,10 +1,13 @@
 import React from 'react'
 import PixelImage from './PixelImage'
+import TunderText from '@/effects/TunderText'
 
 const Section01 = () => {
     return (
         <section className='w-full px-[5vw] py-[10vw]'>
-            <h2 className='text-heading2 text-brand-secondary tracking-tighter font-custom mb-[5vw]'>Selected Works</h2>
+            <h2 className='text-heading2 text-brand-secondary tracking-tighter font-custom mb-[5vw]'>
+                <TunderText color='#1a3526' lighthning='#aae263' initialDelay={0}  text=' Selected Works'/>
+               </h2>
 
             <div className='flex gap-4 mb-8'>
                 <div className='w-5/12'>
@@ -50,6 +53,7 @@ const Section01 = () => {
                 <div className='w-5/12 pt-[10vw]'>
                     <PixelImage className="h-[20vw] w-full">
                         <img src="https://images.unsplash.com/photo-1723553495282-5fecd038e9c6?q=80&w=723&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="work" className="w-full h-full object-cover" />
+                   
                     </PixelImage>
                     <p className='mt-3 text-[1.3vw] tracking-tighter text-brand-secondary'>Nature&apos;s Canvas — 2022</p>
                 </div>
