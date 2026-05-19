@@ -42,7 +42,7 @@ function Services() {
   {texts.map(({text,url,img,y,initialY},index)=>{
 
      return (
-   <RubberSection defaultStart={["start 0.89", "0.7 start"]} defaultY={[initialY, y]} >
+   <RubberSection key={index} defaultStart={["start 0.89", "0.7 start"]} defaultY={[initialY, y]} >
         <div className="cursor-pointer overflow-hidden relative w-full py-10 px-2 h-[350px] rounded-xl items-start justify-end flex gap-4 flex-col">
   {/* Background image */}
   <motion.img
